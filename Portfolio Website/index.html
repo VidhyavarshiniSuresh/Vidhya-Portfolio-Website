@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Personal porfolio Website</title>
+    <style>
+         body{
+   animation: bounce 5s ease-out;
+}
+@keyframes bounce {
+ from { transform: translateY(-100px); opacity: 0; }
+ to { transform: translateY(0); opacity: 1; }
+}
+
+ .container
+        {
+            background-color:  #c1aff7;
+            position: relative;
+            display: grid;
+            grid-template-rows: 1fr 4fr;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 2000px;
+        }
+        .container2
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #ad98ee;
+            width: 1800px;
+        }
+        .item1
+        {
+            background-color: rgb(248, 198, 248);
+            height: 800px;
+            width: 600px;
+            position: relative;
+            left: 100px;
+        }
+        img
+        {
+            width: 500px; 
+            height: 500px;
+            filter: opacity(1);
+            position: absolute;
+            top: 0px;
+            left: 50px;
+        }
+        .item2
+        {
+            position: relative;
+            top: 275px;
+            left:100px;
+            background:linear-gradient(to top,rgb(201, 201, 220), rgb(196, 245, 245));opacity: 0.9;
+            width: 500px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            flex-direction: column;
+            height: 250px;
+            margin: -50px;            
+        }
+        .item2:hover
+        {
+            transform: translateY(-2px)
+        }
+        .skills
+        {
+            background-color: rgb(145, 221, 233);
+            border-radius: 5px;
+            position: absolute;
+            top: 59%;left: 8%;
+            width: 505px;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+        }
+        .skill1
+        {
+            background-color: rgb(221, 165, 237);
+            margin: 20px;
+            padding: 20px;
+        }
+        .progress-bar1
+        {
+            animation: fillProgress 5s ease forwards infinite ;
+            height: 30px;
+            background-color: #4caf50;
+            border-radius: 8px;
+        }
+        @keyframes fillProgress {
+            0% {
+                width: 0;
+            }
+            80% {
+                width: 80%;
+            }
+        }
+        .progress-bar2
+        {
+            animation: fillProgress 5s ease forwards infinite;
+            width: 0;
+            height: 30px;
+            background-color: #654caf;
+            border-radius: 8px;
+        }
+        @keyframes fillProgress {
+            0% {
+                width: 0;
+            }
+            98% {
+                width: 98%;
+            }
+        }
+    .progress-bar3
+        {
+            animation: fillProgress 5s ease forwards infinite ;
+            width: 0;
+            height: 30px;
+            background-color: #f59bb6;
+            border-radius: 8px;
+        }
+        @keyframes fillProgress {
+      0% {
+        width: 0;
+      }
+      70% {
+        width: 70%;
+      }
+    }.progress-bar4
+        {
+            animation: fillProgress 5s ease forwards infinite;
+            width: 0;
+            height: 30px;
+            background-color: #c7da74;
+            border-radius: 8px;
+        }
+        @keyframes fillProgress {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+    .header
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #c1aff7;
+    }
+    .years
+    {
+        border-bottom: 2px solid gray;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: x-large;
+         box-shadow: 0px 1px 0px rgb(66, 65, 65);
+
+    }
+    .container1
+    {
+            background-color: rgb(248, 198, 248);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 900px
+    }
+    .project
+    {
+       border-bottom: 2px solid gray;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        font-size: x-large; 
+        box-shadow: 0px 1px 0px rgb(66, 65, 65);
+    }
+     .internship
+    {
+       border-bottom: 2px solid gray;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        font-size: x-large; 
+        box-shadow: 0px 1px 0px rgb(66, 65, 65);
+    }
+    .intern1
+    {
+        border: 2px solid violet;
+        padding: 20px; margin: 20px;
+        width: 300px;
+        text-align: center;
+        background-color: violet;
+        border-radius: 50px;
+    }
+    .intern2
+    {
+        border: 2px solid violet;
+        padding: 20px; margin: 20px;
+        width: 300px;
+        text-align: center;
+        background-color: violet;
+        border-radius: 50px;
+    }
+    .hover-content
+    {visibility: hidden}
+    .intern1:hover .hover-content
+    {
+        visibility: visible;
+    }
+    .hover-content
+    {visibility: hidden}
+    .intern2:hover .hover-content
+    {
+        visibility: visible;
+    }
+    .edu{width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px 1px 0px rgb(66, 65, 65);
+        border-bottom: 2px solid gray;
+
+}
+.edu-details
+{
+    display: flex;
+    flex-direction: row;
+}
+svg
+{
+    position: relative;
+    left: 320px;
+}
+.edu1
+{
+    background-color: #ad98ee;
+    border-radius: 10px;
+    margin-left: -100px;
+}
+.edu1:hover
+{
+    transform: scale(2);
+}
+.edu2
+{
+    background-color: #ad98ee;
+    border-radius: 10px;
+    margin-left: 75px;
+}
+.edu2:hover
+{
+    transform: scale(2);
+}
+.edu3
+{
+    background-color: #ad98ee;
+    border-radius: 10px;
+    margin-left: 75px;
+}
+.edu3:hover
+{
+    transform: scale(2);
+}
+</style>
+
+</head>
+<body>
+   
+    <div class="container">
+        <div class="header">
+            <h1><strong>
+                 My Personal porfolio Website
+            </strong></h1>
+        </div>
+        <div class="container2">
+            <div class="item1">
+                <img src="/Image/My photo.jpg" alt="Vidhyavarshini S">
+                    <div class="item2">
+                        <h2>Vidhyavarshini</h2>
+                        <p>RF Design Engineer</p>
+                        <p>📍Kuruvikulam,Tenkasi</p>
+                        <p>📩 Vidhya@gmail.com</p>
+                        <p>📞 9243656750</p>
+                    </div>  
+                    <div class="skills">
+                        <div class="skill1">Communication
+                            <div class="progress-bar1"></div>
+                        </div>
+                        <div class="skill1">Team Work
+                            <div class="progress-bar2"></div>
+                        </div> 
+                        <div class="skill1">Creative Thinking
+                            <div class="progress-bar3"></div>
+                        </div>
+                        <div class="skill1">Flexible for all working Culture
+                            <div class="progress-bar4"></div>
+                        </div>
+                   </div>
+            </div>
+            <div class="container1">
+                <div class="years">
+                    <h1> 1Yr Worked as RF design Engineer</h1>
+                    <p>Data Patterns India Limted</p>
+                </div>
+                <div class="project">
+                    <p><b><i>Completed 1 project-16 x 8 Switch Matrix for Sukoi-30</i></b></p>
+                </div>
+                <div class="internship">
+                    <h2>Internships</h2>
+                    <div class="intern1">3 Months
+                        <div class="hover-content">
+                            Mistral Solutions Pvt Ltd.
+                        </div>
+                    </div>
+                    <div class="intern2">6 Months
+                        <div class="hover-content">
+                            Data Patterns India Ltd.
+                        </div>
+                    </div>
+                </div>
+                <div class="edu">
+                   <h1>Educational Details</h1>
+                   <svg width="1200" height="100">
+                        <circle cx="15" cy="60" r="10" stroke="black" stroke-width="3" fill="red"></circle>
+                        <line x1="15" y1="70" x2="10" y2="1000" stroke="black" stroke-width="3px" ></line>
+                        <line x1="25" y1="60" x2="200" y2="60" stroke="black" stroke-width="3"></line>
+                        <circle cx="210" cy="60" r="10" stroke="black" stroke-width="3" fill="red"></circle>
+                        <line x1="210" y1="70" x2="10" y2="8000" stroke="black" stroke-width="3px" ></line>
+                        <line x1="220" y1="60" x2="400" y2="60" stroke="black" stroke-width="3"></line>
+                        <circle cx="405" cy="60" r="10" stroke="black" stroke-width="3" fill="red"></circle>
+                        <line x1="406" y1="70" x2="10" y2="111000" stroke="black" stroke-width="3px" ></line>
+                   </svg>
+                   <div class="edu-details">
+                    <div class="edu1">2017-2018<br>SSLC with 86%<br>SMMS School</div>
+                    <div class="edu2">2019-2020<br>HSC with 56%<br>Sri jayendra School</div>
+                    <div class="edu3">2017-2018<br>College with 83%<br>NEC College</div>
+                   </div>
+                </div>
+                <div class="certifications">
+                    <h1 style="font-size: xX-large;">Certification Courses</h1>
+                    <ul>
+                        <li>Joy Of Computing using Python</li>
+                        <li>Cloud Computing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>  
+</html>
